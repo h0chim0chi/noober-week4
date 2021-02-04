@@ -116,5 +116,11 @@ if (leg.purpleRequested == true) {
     }
   }
 
+if (leg.grayRequested == true) {
+  element.insertAdjacentHTML('beforeend', renderGray(leg))
+} else {
+  element.insertAdjacentHTML('beforeend', renderPurple(leg))
+}
+
   window.addEventListener('DOMContentLoaded', pageLoaded)
 
