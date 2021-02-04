@@ -83,7 +83,7 @@ for (let n = 0; n < rides.length; n++) {
   let ride = rides[n] 
   let element = document.querySelector('.rides')
 
-for(let y=0; y < ride.length; y++){
+for (let y=0; y < ride.length; y++){
     let leg = ride[y]
  
   console.log(ride)
@@ -108,13 +108,6 @@ if (ride.length > 1) {
 
 if (y == 0) {
     element.insertAdjacentHTML('beforeend', renderTitle())}
-
-if (leg.purpleRequested == true) {
-    element.insertAdjacentHTML('beforeend', renderPurple(leg))
-  } else {
-    element.insertAdjacentHTML('beforeend', renderGray(leg))
-    }
-  }
 
 if (leg.grayRequested == true) {
   element.insertAdjacentHTML('beforeend', renderGray(leg))
