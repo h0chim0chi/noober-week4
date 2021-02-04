@@ -1,9 +1,7 @@
 async function pageLoaded() {
   let response = await fetch('https://kiei451.com/api/rides.json')
   let json = await response.json()
-  
-  //convert rides to object
-  let rides = json
+  let rides = json  //convert rides to object
 
   // writes the returned JSON to the console
   console.dir(json)
