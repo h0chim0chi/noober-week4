@@ -108,10 +108,10 @@ if (ride.length > 1) {
     console.log('Noober X') 
    }
 
-  if (y == 0) {
-      element.insertAdjacentHTML('beforeend', renderTitle())}
+if (y == 0) {
+    element.insertAdjacentHTML('beforeend', renderTitle())}
 
-  if (leg.purpleRequested == true) {
+if (leg.purpleRequested == true) {
     element.insertAdjacentHTML('beforeend', renderPurple(leg))
   } else {
     element.insertAdjacentHTML('beforeend', renderGray(leg))
